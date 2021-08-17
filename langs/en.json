@@ -1,0 +1,19 @@
+{
+    "this_lang_short" : "en",
+    "this_lang_long" : "English",
+    "lang_tr" : "Turkish",
+    "lang_en" : "English",
+    "lang_ge" : "German",
+    "lang_ru" : "Russian",
+    "allLangs" : [
+        ["tr", "Turkish"],
+        ["en", "English"],
+        ["ge", "German"],
+        ["ru", "Russian"]
+    ],
+    "navbar_home" : "Home",
+    "navbar_about" : "About",
+    "navbar_what_we_do" : "What We Do",
+    "navbar_projects" : "Project",
+    "navbar_contact" : "Contact"
+}

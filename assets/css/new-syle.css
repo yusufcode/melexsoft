@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+#master-head .navbar-right .select-language *::selection{
+    background-color: transparent;
+}
+
 #master-head .navbar-right .select-language .current-language{
     padding: 5px 10px;
     border: 1px solid white;
@@ -32,6 +36,7 @@
 #master-head .navbar-right .select-language .other-languages li{
     border-bottom: 1px solid white;
     padding: 5px 10px;
+    position: relative;
 }
 
 #master-head .navbar-right .select-language .other-languages li:last-child{
@@ -40,4 +45,15 @@
 
 #master-head .navbar-right .select-language .other-languages li:hover{
     background-color: rgba(255,255,255,0.2);
+}
+
+#master-head .navbar-right .select-language .other-languages li.active::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f00c";
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }

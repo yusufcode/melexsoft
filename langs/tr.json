@@ -1,0 +1,19 @@
+{   
+    "this_lang_short" : "tr",
+    "this_lang_long" : "Türkçe",
+    "lang_tr" : "Türkçe",
+    "lang_en" : "İngilizce",
+    "lang_ge" : "Almanca",
+    "lang_ru" : "Rusça",
+    "allLangs" : [
+        ["tr", "Türkçe"],
+        ["en", "İngilizce"],
+        ["ge", "Almanca"],
+        ["ru", "Rusça"]
+    ],
+    "navbar_home" : "Anasayfa",
+    "navbar_about" : "Hakkımızda",
+    "navbar_what_we_do" : "Neler Yapıyoruz",
+    "navbar_projects" : "Projelerimiz",
+    "navbar_contact" : "İletişim"
+}

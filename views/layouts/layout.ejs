@@ -56,32 +56,32 @@
                     </div>
                     <div id="navigation" class="nav navbar-nav navbar-main">
                         <ul id="main-menu" class="menu-primary">
-                            <li class="menu-item active">
-                                <a href="index.html">Anasayfa</a>
+                            <li class="menu-item <%if(activePage == 'home'){%>active<%}%>">
+                                <a href="index.html"><%-lang.navbar_home%></a>
                             </li>
-                            <li class="menu-item">
-                                <a href="about.html">Hakkımızda</a>
+                            <li class="menu-item <%if(activePage == 'about'){%>active<%}%>">
+                                <a href="about.html"><%-lang.navbar_about%></a>
                             </li>
-                            <li class="menu-item">
-                                <a href="jobs.html">Neler Yapıyoruz</a>
+                            <li class="menu-item <%if(activePage == 'what_we_do'){%>active<%}%>">
+                                <a href="jobs.html"><%-lang.navbar_what_we_do%></a>
                             </li>
-                            <li class="menu-item">
-                                <a href="projects.html">Projelerimiz</a>
+                            <li class="menu-item <%if(activePage == 'projects'){%>active<%}%>">
+                                <a href="projects.html"><%-lang.navbar_projects%></a>
                             </li>
-                            <li class="menu-item">
-                                <a href="contact.html">İletişim</a>
+                            <li class="menu-item <%if(activePage == 'contact'){%>active<%}%>">
+                                <a href="contact.html"><%-lang.navbar_contact%></a>
                             </li>
                         </ul>
                     </div>
                     <div class="navbar-right">
                         <div class="select-language">
                             <div class="current-language">
-                                <p>Türkçe</p>
+                                <p><%-lang.this_lang_long%></p>
                             </div>
                             <ul class="other-languages">
-                                <li>İngilizce</li>
-                                <li>Almanca</li>
-                                <li>Rusça</li>
+                                <% for(let i = 0; i < lang.allLangs.length; i++) {%>
+                                    <li lang="<%-lang.allLangs[i][0] %>" class="language <% if(lang.this_lang_short == lang.allLangs[i][0]){%>active<%}%>" onclick="activateLanguage(this)"><%-lang.allLangs[i][1] %></li>
+                                <%}%>
                             </ul>
                         </div>
                     </div>
