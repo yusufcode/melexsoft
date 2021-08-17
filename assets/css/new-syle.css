@@ -1,0 +1,43 @@
+#master-head .navbar-right .select-language{
+    color: white;
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+#master-head .navbar-right .select-language .current-language{
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#master-head .navbar-right .select-language .current-language p{
+    margin-bottom: 0;
+}
+
+#master-head .navbar-right .select-language .other-languages{
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#master-head .navbar-right .select-language .other-languages.show{
+    display: block;
+}
+
+#master-head .navbar-right .select-language .other-languages li{
+    border-bottom: 1px solid white;
+    padding: 5px 10px;
+}
+
+#master-head .navbar-right .select-language .other-languages li:last-child{
+    border-bottom: 0;
+}
+
+#master-head .navbar-right .select-language .other-languages li:hover{
+    background-color: rgba(255,255,255,0.2);
+}
