@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%-lang.this_lang_short%>">
     <head>
+
+        <!--META TAGS--> 
         <meta charset="utf-8" />
-        <title>Dcode – SaaS & CRM Software Landing Page Website Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="App and SaaS Landing Template" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!--TITLE--> 
+        <title>MelexSoft</title>
+
+        <!--DESCRIPTION--> 
+        <meta name="description" content="MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir." />
+
+        <!--KEYWORDS--> 
         <meta name="keywords" content="Application, Clean, SaaS, Dashboard, Bootstrap4" />
+
+        <!--AUTHOR--> 
         <meta content="sacredthemes" name="author" />
-        <!-- favicon -->
+
+        <!--FAVICON-->
         <link rel="shortcut icon" href="/assets/images/favicon.ico">
-        <!-- WOW Animation -->
+
+        <!--ANIMATE-->
         <link href="/assets/css/animate.css" rel="stylesheet" type="text/css"  />
-        <!-- Bootstrap css -->
+
+        <!--BOOTSTRAP-->
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Slick Slider -->
+
+        <!--SLICK-->
         <link href="/assets/css/slick.css" rel="stylesheet" type="text/css"  />
-        <!-- Icons -->
+
+        <!--ICONS-->
         <link href="/assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
-        <!-- Main css File -->
+
+        <!--CSS-->
         <link href="/assets/css/style.css" rel="stylesheet" type="text/css" id="theme-default" />
         <link href="/assets/css/rtl-style.css" rel="stylesheet" type="text/css" id="rtl-theme-default" disabled="disabled" />
         <link href="/assets/css/colors/default-color.css" rel="stylesheet" type="text/css" id="theme-color" />
         <link href="/assets/css/new-syle.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
         <!-- box-wrapper -->
@@ -38,12 +55,12 @@
             </div>
             <!-- Loader -->
             <!-- Nav Bar -->
-            <header id="master-head" class="navbar menu-absolute menu-center menu-light">
-                <div class="container-fluid">
+            <header id="master-head" class="<%-navbarClass%>">
+                <div class="container">
                     <div id="main-logo" class="logo-container">
-                        <a class="logo" href="index-crm.html">
-                            <img src="/assets/images/d-code-logo-dark.svg" class="logo-dark" alt="DCode">
-                            <img src="/assets/images/d-code-logo-light.svg" class="logo-light" alt="DCode">
+                        <a class="logo" href="/">
+                            <img src="/assets/images/logo/melexsoft_logo_dark.png" class="logo-dark" alt="DCode">
+                            <img src="/assets/images/logo/melexsoft_logo.png" class="logo-light" alt="DCode">
                         </a>
                     </div>
                     <div class="menu-toggle-btn">
@@ -57,19 +74,22 @@
                     <div id="navigation" class="nav navbar-nav navbar-main">
                         <ul id="main-menu" class="menu-primary">
                             <li class="menu-item <%if(activePage == 'home'){%>active<%}%>">
-                                <a href="index.html"><%-lang.navbar_home%></a>
+                                <a href="/"><%-lang.navbar_home%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'about'){%>active<%}%>">
-                                <a href="about.html"><%-lang.navbar_about%></a>
+                            <li class="menu-item <%if(activePage == 'service'){%>active<%}%>">
+                                <a href="/service"><%-lang.navbar_service%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'what_we_do'){%>active<%}%>">
-                                <a href="jobs.html"><%-lang.navbar_what_we_do%></a>
+                            <li class="menu-item <%if(activePage == 'process'){%>active<%}%>">
+                                <a href="/process"><%-lang.navbar_process%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'projects'){%>active<%}%>">
-                                <a href="projects.html"><%-lang.navbar_projects%></a>
+                            <li class="menu-item <%if(activePage == 'case_studies'){%>active<%}%>">
+                                <a href="/case-studies"><%-lang.navbar_case_studies%></a>
+                            </li>
+                            <li class="menu-item <%if(activePage == 'blog'){%>active<%}%>">
+                                <a href="/blog"><%-lang.navbar_blog%></a>
                             </li>
                             <li class="menu-item <%if(activePage == 'contact'){%>active<%}%>">
-                                <a href="contact.html"><%-lang.navbar_contact%></a>
+                                <a href="/contact"><%-lang.navbar_contact%></a>
                             </li>
                         </ul>
                     </div>

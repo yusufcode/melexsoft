@@ -1,53 +1,77 @@
-#master-head .navbar-right .select-language{
-    color: white;
+/* NEW ELEMENTS */
+#master-head .select-language{
+    color: var(--menu-link-color);
     width: 150px;
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
-#master-head .navbar-right .select-language *::selection{
-    background-color: transparent;
+/* #master-head.menu-absolute .select-language{
+    color: white;
+} */
+
+#master-head.menu-fixed .select-language{
+    color: var(--menu-link-color);
 }
 
-#master-head .navbar-right .select-language .current-language{
+#master-head .select-language .current-language{
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 1px solid var(--menu-link-color);
     border-radius: 15px;
 }
 
-#master-head .navbar-right .select-language .current-language p{
+/* #master-head.menu-absolute .select-language .current-language{
+    border-color: white;
+} */
+
+#master-head.menu-fixed .select-language .current-language{
+    border-color: var(--menu-link-color);
+}
+
+#master-head .select-language .current-language p{
     margin-bottom: 0;
 }
 
-#master-head .navbar-right .select-language .other-languages{
+#master-head .select-language .other-languages{
     display: none;
     position: absolute;
-    top: 50px;
+    top: 80px;
     width: 150px;
     border: 1px solid white;
     border-radius: 15px;
     overflow: hidden;
+    background-color: white;
 }
 
-#master-head .navbar-right .select-language .other-languages.show{
+#master-head.menu-absolute .select-language .other-languages{
+    top: 50px;
+}
+
+#master-head.menu-fixed .select-language .other-languages{
+    top: 80px;
+    background-color: white;
+}
+
+#master-head .select-language .other-languages.show{
     display: block;
 }
 
-#master-head .navbar-right .select-language .other-languages li{
-    border-bottom: 1px solid white;
+#master-head .select-language .other-languages li{
+    border-bottom: 1px solid #dedede;
     padding: 5px 10px;
     position: relative;
 }
 
-#master-head .navbar-right .select-language .other-languages li:last-child{
+#master-head .select-language .other-languages li:last-child{
     border-bottom: 0;
 }
 
-#master-head .navbar-right .select-language .other-languages li:hover{
-    background-color: rgba(255,255,255,0.2);
+#master-head .select-language .other-languages li:hover{
+    background-color: rgba(0,0,0,0.05);
 }
 
-#master-head .navbar-right .select-language .other-languages li.active::after{
+#master-head .select-language .other-languages li.active::after{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f00c";
@@ -56,4 +80,11 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* UPDATE ELEMENTS */
+
+/* text on left - 4 box on right */
+.features-section .inner-row .col-lg-6:nth-child(3){
+    margin-top: -50px;
 }

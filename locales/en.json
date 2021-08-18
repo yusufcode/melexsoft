@@ -12,8 +12,11 @@
         ["ru", "Russian"]
     ],
     "navbar_home" : "Home",
-    "navbar_about" : "About",
-    "navbar_what_we_do" : "What We Do",
-    "navbar_projects" : "Project",
-    "navbar_contact" : "Contact"
+    "navbar_service" : "Service",
+    "navbar_process" : "Process",
+    "navbar_case_studies" : "Case Studies",
+    "navbar_blog" : "Blog",
+    "navbar_contact" : "Contact",
+    "header_title": "We bring real life solutions on the blockchain.",
+    "header_title_2": "What we do? We develop:"
 }

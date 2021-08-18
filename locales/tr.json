@@ -12,8 +12,11 @@
         ["ru", "Rusça"]
     ],
     "navbar_home" : "Anasayfa",
-    "navbar_about" : "Hakkımızda",
-    "navbar_what_we_do" : "Neler Yapıyoruz",
-    "navbar_projects" : "Projelerimiz",
-    "navbar_contact" : "İletişim"
+    "navbar_service" : "Servis",
+    "navbar_process" : "Süreç",
+    "navbar_case_studies" : "Case Studies",
+    "navbar_blog" : "Blog",
+    "navbar_contact" : "İletişim",
+    "header_title": "Blockchain'le birlikte gerçek hayat çözümleri üretiriz.",
+    "header_title_2": "Neler yaparız? Şunları geliştiririz:"
 }

@@ -9,6 +9,7 @@ app.set('layout', 'layouts/layout');
 
 //USE
 app.use('/assets', express.static('assets'))
+app.use('/node_modules', express.static('node_modules'))
 app.use(expressLayouts)
 app.use(cookieParser())
 
@@ -16,23 +17,9 @@ app.use(cookieParser())
 const languageMw = require('./middlewares/languageMw')
 
 //ROUTES
-app.get('/', languageMw, (req, res) => {
+app.use('/', languageMw, require('./routes/indexGetRoutes'))
+app.use('/', require('./routes/indexPostRoutes'))
 
-    res.render('index', {activePage: 'home', lang: req.lang})
-})
-
-app.post('/changeLanguage/:lang?', (req, res) => {
-
-    const lang = req.params.lang
-
-    const maxAge = 60*60*24
-    res.cookie('lang', lang, {maxAge: maxAge * 1000})
-
-    res.send({
-        status: true
-    })
-
-})
 
 //SERVER
 const port = 3000

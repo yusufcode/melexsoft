@@ -35,9 +35,7 @@ function activateLanguage(language){
 
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-    console.log(window.navigator.language)
-})
+
 
 
 
