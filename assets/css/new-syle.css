@@ -1,4 +1,6 @@
 /* NEW ELEMENTS */
+
+/* Select Language */
 #master-head .select-language{
     color: var(--menu-link-color);
     width: 150px;
@@ -42,6 +44,7 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: white;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.25);
 }
 
 #master-head.menu-absolute .select-language .other-languages{
@@ -82,9 +85,74 @@
     transform: translateY(-50%);
 }
 
+/* Process Page */
+.arrow{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.arrow img{
+    width: 600px;
+}
+
 /* UPDATE ELEMENTS */
 
 /* text on left - 4 box on right */
 .features-section .inner-row .col-lg-6:nth-child(3){
-    margin-top: -50px;
+    margin-top: -55px;
+}
+
+@media(max-width: 768px){
+    .features-section .inner-row .col-lg-6:nth-child(3){
+        margin-top: 0;
+    }
+}
+
+.features-block{
+    margin-bottom: 0;
+}
+
+/* footer-logo */
+.about-info img{
+    max-width: 250px;
+}
+
+/* icon box - theme two */
+.icon-box.theme-two{
+    height: 100%;
+    padding: 20px;
+}
+
+.icon-box.theme-two .icon{
+    background: transparent;
+    position: relative;
+}
+
+.icon-box.theme-two .icon img{
+    max-width: -webkit-fill-available;
+    transition: 0.5s all;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.icon-box.theme-two .icon img.hover{
+    opacity: 0;
+}
+
+.icon-box.theme-two:hover .icon img.normal{
+    opacity: 0;
+}
+
+.icon-box.theme-two:hover .icon img.hover{
+    opacity: 1;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+    padding: 10px 15px;
+}
+
+/* justify content center */
+.justify-content-center{
+    margin: auto;
 }

@@ -64,31 +64,29 @@
                         </a>
                     </div>
                     <div class="menu-toggle-btn">
-                        <!-- Mobile menu toggle-->
                         <a class="navbar-toggle">
                             <div class="burger-lines">
                             </div>
                         </a>
-                        <!-- End mobile menu toggle-->
                     </div>
                     <div id="navigation" class="nav navbar-nav navbar-main">
                         <ul id="main-menu" class="menu-primary">
-                            <li class="menu-item <%if(activePage == 'home'){%>active<%}%>">
+                            <li class="menu-item <%if(activePage == lang.navbar_home){%>active<%}%>">
                                 <a href="/"><%-lang.navbar_home%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'service'){%>active<%}%>">
-                                <a href="/service"><%-lang.navbar_service%></a>
+                            <li class="menu-item <%if(activePage == lang.navbar_services){%>active<%}%>">
+                                <a href="/services"><%-lang.navbar_services%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'process'){%>active<%}%>">
+                            <li class="menu-item <%if(activePage == lang.navbar_process){%>active<%}%>">
                                 <a href="/process"><%-lang.navbar_process%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'case_studies'){%>active<%}%>">
+                            <li class="menu-item <%if(activePage == lang.navbar_case_studies){%>active<%}%>">
                                 <a href="/case-studies"><%-lang.navbar_case_studies%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'blog'){%>active<%}%>">
+                            <li class="menu-item <%if(activePage == lang.navbar_blog){%>active<%}%>">
                                 <a href="/blog"><%-lang.navbar_blog%></a>
                             </li>
-                            <li class="menu-item <%if(activePage == 'contact'){%>active<%}%>">
+                            <li class="menu-item <%if(activePage == lang.navbar_contact){%>active<%}%>">
                                 <a href="/contact"><%-lang.navbar_contact%></a>
                             </li>
                         </ul>
@@ -120,16 +118,9 @@
                                     <div class="text-widget">
                                         <div class="about-info">
                                             <div class="image-wrapper">
-                                                <img src="/assets/images/d-code-logo-light.svg" alt="" />
+                                                <img src="/assets/images/logo/melexsoft_logo.png" alt="" />
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra. Nam gravida dignissim eros.</p>
-                                        </div>
-                                        <div class="playstore-widget">
-                                            <h3>Download the App</h3>
-                                            <ul>
-                                                <li class="google"><a href="#">Google Play</a></li>
-                                                <li class="apple"><a href="#">App Store</a></li>
-                                            </ul>
+                                            <p><%-lang.footer_description%></p>
                                         </div>
                                     </div>
                                 </div><!-- End Widget -->
@@ -137,16 +128,17 @@
                             <div class="col-lg-2">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title">Useful Links</h3>
+                                        <h3 class="title"><%-lang.footer_menu%></h3>
                                     </div>
                                     <div class="text-widget">
                                         <div class="footer-nav">
                                             <ul>
-                                                <li><a href="#">Trust & Safety</a></li>
-                                                <li><a href="#">Cookie Policy</a></li>
-                                                <li><a href="#">Contact Us</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
-                                                <li><a href="#">Terms of Service</a></li>
+                                                <li><a href="#"><%-lang.navbar_home%></a></li>
+                                                <li><a href="#"><%-lang.navbar_service%></a></li>
+                                                <li><a href="#"><%-lang.navbar_process%></a></li>
+                                                <li><a href="#"><%-lang.navbar_case_studies%></a></li>
+                                                <li><a href="#"><%-lang.navbar_blog%></a></li>
+                                                <li><a href="#"><%-lang.navbar_contact%></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -155,7 +147,7 @@
                             <div class="col-lg-2">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title">Support</h3>
+                                        <h3 class="title"><%-lang.footer_support%></h3>
                                     </div>
                                     <div class="text-widget">
                                         <div class="footer-nav">
@@ -172,21 +164,22 @@
                             <div class="col-lg-4">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title">Stay Updated</h3>
+                                        <h3 class="title"><%-lang.footer_contact%></h3>
                                     </div>
                                     <div class="text-widget">
                                         <div class="contact-info">
                                             <ul>
-                                                <li class="email-field">support@sacredthemes.net</li>
-                                                <li class="phone-field">+1 (234) 567-9801</li>
-                                                <li class="address-field">49 Uniqe Square D, New York, NY 10003, USA</li>
+                                                <li class="email-field">support@melexsoft.com</li>
+                                                <li class="phone-field">+90 (212) 123 4567</li>
+                                                <li class="location-field">Taksim 360 - Taksim, Istanbul, Turkey</li>
                                             </ul>
                                         </div>
                                         <div class="social-media-links">
                                             <ul>
-                                                <li><a target="_blank" href="https://www.facebook.com/sacredthemes/"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a target="_blank" href="https://www.linkedin.com/company/sacredthemes/"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a target="_blank" href="https://twitter.com/SacredThemes"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a target="_blank" href="https://www.facebook.com/melexsoft/"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a target="_blank" href="https://www.instagram.com/melexsoft/"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a target="_blank" href="https://twitter.com/melexsoft"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/company/melexsoft/"><i class="fab fa-linkedin-in"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -196,7 +189,7 @@
                     </div>
                     <div class="copyright-bar style-dark">
                         <div class="copyright-text text-center">
-                            © Copyright DCode 2020. Made with <i class="fas fa-heart"></i> by <a href="https://sacredthemes.net" target="_blank"><strong>SacredThemes</strong></a>.
+                            MelexSoft © 2021
                         </div>
                     </div>
                 </div>
