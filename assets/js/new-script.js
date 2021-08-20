@@ -1,10 +1,10 @@
 //SHOW OR HIDE SELECT LANGUAGE DROPDOWN MENU
-document.querySelector('#master-head .navbar-right .select-language .current-language').addEventListener('click', function(){
+document.querySelector('#master-head .select-language .current-language').addEventListener('click', function(){
 
-    if(!document.querySelector('#master-head .navbar-right .select-language .other-languages').classList.contains('show')){
-        document.querySelector('#master-head .navbar-right .select-language .other-languages').classList.add('show')
+    if(!document.querySelector('#master-head .select-language .other-languages').classList.contains('show')){
+        document.querySelector('#master-head .select-language .other-languages').classList.add('show')
     } else{
-        document.querySelector('#master-head .navbar-right .select-language .other-languages').classList.remove('show')
+        document.querySelector('#master-head .select-language .other-languages').classList.remove('show')
     }
 
 })
@@ -12,7 +12,7 @@ document.querySelector('#master-head .navbar-right .select-language .current-lan
 //SELECT & CHANGE LANGUAGE
 function activateLanguage(language){
 
-    document.querySelector('#master-head .navbar-right .select-language .other-languages li.active').classList.remove('active')
+    document.querySelector('#master-head .select-language .other-languages li.active').classList.remove('active')
     language.classList.add('active')
 
     const newLanguage = language.getAttribute('lang')
@@ -35,7 +35,13 @@ function activateLanguage(language){
 
 }
 
-
+//TYPED.JS
+const typed = new Typed('#typed', {
+    strings: ["NFT", "BlockChain"],
+    typeSpeed: 115,
+    backSpeed: 32,
+    loop: true
+  })
 
 
 

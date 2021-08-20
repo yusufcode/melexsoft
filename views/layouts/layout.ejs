@@ -19,7 +19,7 @@
         <meta content="sacredthemes" name="author" />
 
         <!--FAVICON-->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.svg">
 
         <!--ANIMATE-->
         <link href="/assets/css/animate.css" rel="stylesheet" type="text/css"  />
@@ -59,8 +59,8 @@
                 <div class="container">
                     <div id="main-logo" class="logo-container">
                         <a class="logo" href="/">
-                            <img src="/assets/images/logo/melexsoft_logo_dark.png" class="logo-dark" alt="DCode">
-                            <img src="/assets/images/logo/melexsoft_logo.png" class="logo-light" alt="DCode">
+                            <img src="/assets/images/logo/logo.svg" style="height: 50px;" class="logo-dark" alt="DCode">
+                            <img src="/assets/images/logo/logo.svg" style="height: 50px;" class="logo-light" alt="DCode">
                         </a>
                     </div>
                     <div class="menu-toggle-btn">
@@ -109,7 +109,7 @@
             <!-- Main Wrapper -->
             <%-body%>
             <!-- Main Wrapper -->
-            <footer class="site-footer footer-theme-two">
+            <footer class="site-footer footer-theme-two wow fadeInUp" data-wow-delay="0.25s">
                 <div class="container">
                     <div class="main-footer style-dark">
                         <div class="row">
@@ -117,10 +117,10 @@
                                 <div class="widget">
                                     <div class="text-widget">
                                         <div class="about-info">
-                                            <div class="image-wrapper">
-                                                <img src="/assets/images/logo/melexsoft_logo.png" alt="" />
+                                            <div class="image-wrapper wow fadeInUp" data-wow-delay="0.6s">
+                                                <img src="/assets/images/logo/logo.svg" style="height: 50px;" alt="" />
                                             </div>
-                                            <p><%-lang.footer_description%></p>
+                                            <p class="wow fadeInUp" data-wow-delay="0.7s"><%-lang.footer_desc%></p>
                                         </div>
                                     </div>
                                 </div><!-- End Widget -->
@@ -128,10 +128,10 @@
                             <div class="col-lg-2">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title"><%-lang.footer_menu%></h3>
+                                        <h3 class="title wow fadeInUp" data-wow-delay="0.5s"><%-lang.footer_menu%></h3>
                                     </div>
                                     <div class="text-widget">
-                                        <div class="footer-nav">
+                                        <div class="footer-nav wow fadeInUp" data-wow-delay="0.6s">
                                             <ul>
                                                 <li><a href="#"><%-lang.navbar_home%></a></li>
                                                 <li><a href="#"><%-lang.navbar_service%></a></li>
@@ -147,10 +147,10 @@
                             <div class="col-lg-2">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title"><%-lang.footer_support%></h3>
+                                        <h3 class="title wow fadeInUp" data-wow-delay="0.5s"><%-lang.footer_support%></h3>
                                     </div>
                                     <div class="text-widget">
-                                        <div class="footer-nav">
+                                        <div class="footer-nav wow fadeInUp" data-wow-delay="0.6s">
                                             <ul>
                                                 <li><a href="#">Documentation</a></li>
                                                 <li><a href="#">FAQ</a></li>
@@ -164,17 +164,17 @@
                             <div class="col-lg-4">
                                 <div class="widget">
                                     <div class="widget-title">
-                                        <h3 class="title"><%-lang.footer_contact%></h3>
+                                        <h3 class="title wow fadeInUp" data-wow-delay="0.5s"><%-lang.footer_contact%></h3>
                                     </div>
                                     <div class="text-widget">
-                                        <div class="contact-info">
+                                        <div class="contact-info wow fadeInUp" data-wow-delay="0.6s">
                                             <ul>
                                                 <li class="email-field">support@melexsoft.com</li>
                                                 <li class="phone-field">+90 (212) 123 4567</li>
                                                 <li class="location-field">Taksim 360 - Taksim, Istanbul, Turkey</li>
                                             </ul>
                                         </div>
-                                        <div class="social-media-links">
+                                        <div class="social-media-links wow fadeInUp" data-wow-delay="0.75s">
                                             <ul>
                                                 <li><a target="_blank" href="https://www.facebook.com/melexsoft/"><i class="fab fa-facebook-f"></i></a></li>
                                                 <li><a target="_blank" href="https://www.instagram.com/melexsoft/"><i class="fab fa-instagram"></i></a></li>
@@ -188,7 +188,7 @@
                         </div><!-- End Row -->
                     </div>
                     <div class="copyright-bar style-dark">
-                        <div class="copyright-text text-center">
+                        <div class="copyright-text text-center wow fadeInUp" data-wow-delay="1s">
                             MelexSoft © 2021
                         </div>
                     </div>
@@ -237,6 +237,8 @@
         <script src="/assets/js/jquery.easing.min.js"></script>
         <script src="/assets/js/scrollspy.min.js"></script>
         <script src="/assets/js/appear.js"></script>
+        <!-- Typed.js -->
+        <script src="/assets/typed.js/lib/typed.min.js"></script>
         <!-- WOW Animation -->
         <script src="/assets/js/wow.min.js"></script>
         <!-- Slick Slider -->

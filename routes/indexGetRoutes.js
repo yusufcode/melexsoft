@@ -17,4 +17,16 @@ router.get('/case-studies', (req, res) => {
     res.render('case-studies', {activePage: req.lang.navbar_case_studies, navbarClass: 'navbar menu-center', lang: req.lang})
 })
 
+router.get('/contact', (req, res) => {
+    res.render('contact', {activePage: req.lang.navbar_contact, navbarClass: 'navbar menu-center', lang: req.lang})
+})
+
+router.get('/404', (req, res) => {
+    res.render('404', {activePage: '', navbarClass: 'navbar menu-center', lang: req.lang})
+})
+
+router.get('*', (req, res) => {
+    res.redirect('404')
+})
+
 module.exports = router
