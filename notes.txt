@@ -1,2 +1,0 @@
-navbar
-home, service, process, case studies, blog, contact
