@@ -44,7 +44,8 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: white;
-    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.25);
+    box-shadow: none;
+    transition: 0.2s all;
 }
 
 #master-head.menu-absolute .select-language .other-languages{
@@ -58,6 +59,7 @@
 
 #master-head .select-language .other-languages.show{
     display: block;
+    box-shadow: 0 2.5px 15px -5px rgba(0,0,0,0.25);
 }
 
 #master-head .select-language .other-languages li{
@@ -97,6 +99,14 @@
 
 /* UPDATE ELEMENTS */
 
+/* PRE-LOADER */
+#preloader #status .d-loader{
+    width: 300px;
+    height: auto;
+}
+
+/* NAVBAR */
+
 /* navbar active li */
 .menu-primary li.menu-item:hover > a, .menu-primary li.menu-item.active > a{
     color: #BC1818;
@@ -106,10 +116,43 @@
     color: #BC1818;
 }
 
-/* footer */
+/* HEADER */
+.page-header.dc-five{
+    background-color: #fff7f7;
+}
+
+/* FOOTER */
+
+/* site-footer */
 .footer-theme-two{
     background: linear-gradient(-84deg, #BC1818 0%, #560000 100%);
 }
+
+/* footer-logo */
+.about-info img{
+    max-width: 250px;
+}
+
+/* footer li */
+.footer-nav li{
+    padding-left: 0;
+}
+
+/* footer li icons */
+.footer-nav li:before{
+    content: '';
+}
+
+/* footer-contact */
+.contact-info li{
+    padding-left: 0;
+}
+
+.contact-info li i{
+    width: 25px;
+}
+
+/* RANDOM */
 
 /* span in h tags */
 .heading-wrapper span{
@@ -140,7 +183,7 @@
     box-shadow: 0px 0px 30px 0px rgba(188, 24, 24, 0.4);
 }
 
-/* dropdown button */
+/* CASE STUDIES PAGE - dropdown button */
 #accordion.style-2 .panel-default .panel-title a::after{
     background: #BC1818;
 }
@@ -156,9 +199,34 @@
     border-color: #BC1818;
 }
 
-/* text on left - 4 box on right */
+#accordion.style-2 .panel-heading .panel-title a{
+    color: var(--heading-text-color);
+}
+
+/* INDEX PAGE- text on left - 4 box on right */
 .features-section .inner-row .col-lg-6:nth-child(3){
     margin-top: -55px;
+}
+
+/* hover disable */
+.features-block.theme-one .inner-box{
+    cursor: default;
+}
+
+.features-block.theme-one .inner-box:before{
+    display: none;
+}
+
+.features-block.theme-one .inner-box:hover{
+    color: inherit;
+}
+
+.features-block.theme-one .inner-box:hover h4{
+    color: inherit;
+}
+
+.features-block.theme-one .icon img{
+    width: 100%;
 }
 
 @media(max-width: 768px){
@@ -169,11 +237,6 @@
 
 .features-block{
     margin-bottom: 0;
-}
-
-/* footer-logo */
-.about-info img{
-    max-width: 250px;
 }
 
 /* icon box - theme two */
@@ -214,4 +277,9 @@
 /* justify content center */
 .justify-content-center{
     margin: auto;
+}
+
+/* 404 PAGE */
+.not-found-image{
+    height: 450px;
 }
