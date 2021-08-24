@@ -35,6 +35,20 @@ function activateLanguage(language){
 
 }
 
+//LIGHTGALLERY
+const galleries = document.querySelectorAll('.lightgallery')
+for (let i = 0; i < galleries.length; i++) {
+    
+    lightGallery(galleries[i], {
+        plugins: [lgZoom],
+        download: false,
+        thumbnail: true,
+        zoom: true
+    });
+    
+}
+
+
 //TYPED.JS
 const typed = new Typed('#typed', {
     strings: ["NFT", "BlockChain"],

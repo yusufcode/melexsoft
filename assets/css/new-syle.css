@@ -105,6 +105,27 @@
     width: 600px;
 }
 
+/* CASE STUDIES LIGHTGALLERY */
+#accordion .panel-body{
+    padding: 30px 15px;
+}
+
+#accordion .panel-body .lightgallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#accordion .panel-body .lightgallery a{
+    padding: 5px;
+    display: inline-block;
+    width: 50%;
+}
+
+#accordion .panel-body .lightgallery a img{
+    border: 5px solid #e5e5e5;
+    border-radius: 10px;
+}
+
 /* UPDATE ELEMENTS */
 
 /* PRE-LOADER */
