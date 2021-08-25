@@ -3,36 +3,37 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#BC1818;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#BC1818;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#BC1818;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#BC181B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#BC181B;stroke:#BC181B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#BC191A;stroke:#BC181B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#BC181B;stroke:#BC181B;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#BC191A;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<circle class="st0" cx="25.31" cy="82.74" r="8"/>
-<circle class="st0" cx="60.31" cy="82.74" r="8"/>
-<circle class="st0" cx="94.31" cy="82.74" r="8"/>
-<path class="st0" d="M34.06,117.74H15.31c-1.1,0-2-0.9-2-2v-17c0-3.87,3.13-7,7-7h8.75c3.87,0,7,3.13,7,7v17
-	C36.06,116.85,35.16,117.74,34.06,117.74z"/>
-<path class="st0" d="M69.06,117.74H50.31c-1.1,0-2-0.9-2-2v-17c0-3.87,3.13-7,7-7h8.75c3.87,0,7,3.13,7,7v17
-	C71.06,116.85,70.16,117.74,69.06,117.74z"/>
-<path class="st0" d="M104.06,117.74H85.31c-1.1,0-2-0.9-2-2v-17c0-3.87,3.13-7,7-7h8.75c3.87,0,7,3.13,7,7v17
-	C106.06,116.85,105.16,117.74,104.06,117.74z"/>
 <g>
-	<path class="st0" d="M45.51,57.49h67.09c1.77,0,3.21-1.44,3.21-3.21V7.7c0-1.77-1.44-3.21-3.21-3.21H7.02
-		c-1.77,0-3.21,1.44-3.21,3.21v46.58c0,0,0,4.36,2.57,4.22"/>
-	<line class="st1" x1="66.13" y1="15.49" x2="100.81" y2="15.49"/>
-	<line class="st1" x1="73.13" y1="26.49" x2="107.81" y2="26.49"/>
-	<line class="st1" x1="66.13" y1="37.49" x2="100.81" y2="37.49"/>
-	<circle class="st0" cx="33.81" cy="27.49" r="8"/>
-	<path class="st0" d="M44.56,60.49"/>
-	<path class="st0" d="M21.81,60.49"/>
-	<line class="st2" x1="33.02" y1="80.61" x2="32.93" y2="65.23"/>
-	<path class="st2" d="M44.56,60.24v43.5c0,1.1-0.9,2-2,2h-6.13"/>
-	<path class="st1" d="M21.81,74.74v-14.5V44.6L10.87,61.83c-0.82,1.29-2.42,1.92-3.86,1.39c-1.97-0.73-2.7-3.02-1.64-4.72
-		c1.07-1.72,2.15-3.45,3.22-5.17c1.89-3.03,3.78-6.07,5.67-9.1c1.25-2,2.13-4.06,4.2-5.36c1.73-1.08,3.7-1.79,5.71-2.15
-		c1.53-0.27,3.09-0.34,4.64-0.23"/>
-	<path class="st1" d="M33.18,105.74"/>
-	<path class="st1" d="M44.56,60.49l0.09-16.83l17.99-12.11c1.5-1.01,1.87-3.07,0.81-4.54l0-0.01c-1.01-1.4-2.94-1.75-4.38-0.8
-		l-14.83,8.94c-1.49,0.9-3.21,1.37-4.95,1.36l-1.73-0.01h-8.75"/>
-	<line class="st0" x1="21.81" y1="57.49" x2="13.63" y2="57.49"/>
+	<path class="st0" d="M47.44,117.34h17.11c0.26,0,0.47-0.21,0.47-0.47V36.23c0-0.26-0.21-0.47-0.47-0.47H18.47
+		c-0.13,0-0.26,0.05-0.35,0.15L2.56,52.83c-0.08,0.09-0.12,35.83-0.12,35.95v28.56H47.44z"/>
+	<path class="st1" d="M18.12,35.91V52.2c0,0.26-0.21,0.47-0.47,0.47H3.39L18.12,35.91z"/>
 </g>
+<circle class="st0" cx="7.07" cy="29.22" r="3.68"/>
+<circle class="st0" cx="22.99" cy="19.24" r="3.68"/>
+<circle class="st2" cx="66.97" cy="10.88" r="3.68"/>
+<circle class="st0" cx="43.99" cy="19.24" r="3.68"/>
+<path class="st3" d="M74.17,33.7l14.55-1.21l-10.84-9.65c-0.08-0.07-0.2-0.08-0.29-0.01c-0.76,0.56-4.06,3.4-3.67,10.66
+	C73.92,33.61,74.04,33.71,74.17,33.7z"/>
+<path class="st4" d="M83.73,22.81L97.9,35.77l-19.17,1.18c0.5,8.17,6.23,15.42,14.6,17.47c10.3,2.53,20.7-3.78,23.23-14.08
+	c2.53-10.3-3.78-20.7-14.08-23.23C95.42,15.39,88.31,17.8,83.73,22.81z"/>
+<circle class="st2" cx="50.34" cy="54.97" r="3.68"/>
+<circle class="st2" cx="50.34" cy="99.97" r="3.68"/>
+<rect x="77.11" y="85.8" class="st0" width="10" height="14.28"/>
+<rect x="87.11" y="78.66" class="st0" width="10" height="21.43"/>
+<rect x="97.11" y="72.94" class="st0" width="10" height="27.14"/>
+<rect x="107.11" y="67.23" class="st0" width="10" height="32.85"/>
+<line class="st0" x1="9.82" y1="26.78" x2="19.57" y2="20.59"/>
+<line class="st0" x1="27.56" y1="19.24" x2="40.31" y2="19.24"/>
+<line class="st0" x1="47.67" y1="19.24" x2="63.28" y2="11.88"/>
+<polyline class="st0" points="54.02,54.97 70.65,54.98 82.11,46.71 "/>
+<line class="st0" x1="117.11" y1="100.08" x2="54.02" y2="100.08"/>
+<line class="st4" x1="9.82" y1="64.69" x2="43.99" y2="64.69"/>
+<line class="st4" x1="9.82" y1="74.69" x2="43.99" y2="74.69"/>
+<line class="st4" x1="9.82" y1="85.69" x2="55.99" y2="85.69"/>
 </svg>

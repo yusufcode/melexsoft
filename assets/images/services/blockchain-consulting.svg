@@ -4,8 +4,9 @@
 	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#BC181A;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#BC181A;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#BC1818;stroke:#BC181A;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#BC181A;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M55.15,72.33H40.02c-0.73,0-1.4,0.4-1.74,1.05l-6,11.24c-0.97,1.81-3.71,1.13-3.72-0.93l-0.01-9.39
 	c0-1.09-0.89-1.97-1.97-1.97H4.21c-1.09,0-1.97-0.88-1.97-1.97V20.97c0-1.09,0.88-1.97,1.97-1.97h75.02c1.09,0,1.97,0.88,1.97,1.97
@@ -15,7 +16,7 @@
 	c0,1.01-2.31,1.37-2.82,0.51c-1.89-3.21-5.13-10.15-6-11.68C89.82,92.29,89.49,92.1,89.14,92.1z"/>
 <line class="st2" x1="11.92" y1="31.08" x2="44.75" y2="31.08"/>
 <line class="st2" x1="11.92" y1="40.47" x2="71.53" y2="40.28"/>
-<line class="st1" x1="64.77" y1="62.07" x2="107.86" y2="62.07"/>
-<line class="st1" x1="64.72" y1="71.45" x2="107.88" y2="71.45"/>
+<line class="st3" x1="64.77" y1="62.07" x2="107.86" y2="62.07"/>
+<line class="st3" x1="64.72" y1="71.45" x2="107.88" y2="71.45"/>
 <line class="st2" x1="64.78" y1="80.81" x2="95.86" y2="80.81"/>
 </svg>

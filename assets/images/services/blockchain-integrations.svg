@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#BC1818;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#BC1818;stroke-miterlimit:10;}
+	.st2{fill:#BC1818;stroke:#BC1818;stroke-miterlimit:10;}
+	.st3{fill:#BC1818;stroke:#BC1818;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="34.57,73.35 33.6,73.35 47.12,73.35 47.12,59.83 "/>
+<polyline class="st0" points="47.12,42.38 47.12,28.86 2.63,28.86 2.63,73.35 16.06,73.35 "/>
+<path class="st1" d="M22.27,73.35"/>
+<path class="st0" d="M33.6,73.33c0-4.82-3.91-8.73-8.73-8.73s-8.73,3.91-8.73,8.73"/>
+<path class="st0" d="M47.12,42.38c4.82,0,8.73,3.91,8.73,8.73s-3.91,8.73-8.73,8.73"/>
+<g>
+	<path class="st2" d="M98.04,46.74"/>
+	<path class="st3" d="M104.16,46.74h13.52V2.26H73.19l0,13.52h0.02c4.82,0,8.73,3.91,8.73,8.73s-3.91,8.73-8.73,8.73h-0.02v13.52
+		l13.52,0h-0.97h0.97c0,4.82,3.91,8.73,8.73,8.73C100.26,55.47,104.16,51.56,104.16,46.74L104.16,46.74z"/>
+</g>
+<g>
+	<polyline class="st0" points="47.25,85.91 47.25,86.88 47.25,73.36 60.76,73.36 	"/>
+	<polyline class="st0" points="78.22,73.36 91.73,73.36 91.73,117.85 47.25,117.85 47.25,104.43 	"/>
+	<path class="st1" d="M47.25,98.21"/>
+	<path class="st0" d="M47.25,86.88c-4.82,0-8.73,3.91-8.73,8.73c0,4.82,3.91,8.73,8.73,8.73"/>
+	<path class="st0" d="M78.22,73.38c0,4.82-3.91,8.73-8.73,8.73c-4.82,0-8.73-3.91-8.73-8.73"/>
+</g>
+<g>
+	<polyline class="st0" points="34.57,73.36 33.6,73.36 47.12,73.36 47.12,86.88 	"/>
+	<polyline class="st0" points="47.12,104.33 47.12,117.85 2.63,117.85 2.63,73.36 16.06,73.36 	"/>
+	<path class="st1" d="M22.27,73.36"/>
+	<path class="st0" d="M33.6,73.36c0-4.82-3.91-8.73-8.73-8.73s-8.73,3.91-8.73,8.73"/>
+	<path class="st0" d="M47.1,104.33c-4.82,0-8.73-3.91-8.73-8.73c0-4.82,3.91-8.73,8.73-8.73"/>
+</g>
+</svg>

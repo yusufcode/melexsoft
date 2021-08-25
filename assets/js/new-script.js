@@ -41,13 +41,10 @@ for (let i = 0; i < galleries.length; i++) {
     
     lightGallery(galleries[i], {
         plugins: [lgZoom],
-        download: false,
-        thumbnail: true,
-        zoom: true
+        download: false
     });
     
 }
-
 
 //TYPED.JS
 const typed = new Typed('#typed', {
