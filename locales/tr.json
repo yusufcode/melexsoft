@@ -11,6 +11,31 @@
         ["ge", "Almanca"],
         ["ru", "Rusça"]
     ],
+
+    "head_home_title" : "",
+    "head_home_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_home_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_services_title" : "Servisler",
+    "head_services_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_services_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_process_title" : "Süreç",
+    "head_process_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_process_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_case_studies_title" : "Case Studies",
+    "head_case_studies_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_case_studies_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_contact_title" : "İletişim",
+    "head_contact_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_contact_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_404_title" : "Sayfa Bulunamadı",
+    "head_404_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_404_keywords" : "Melexsoft, blockchain, crypto...",
+
     "navbar_home" : "Anasayfa",
     "navbar_services" : "Servisler",
     "navbar_process" : "Süreç",
@@ -116,6 +141,12 @@
     "contact_phone": "Telefon Numaranız",
     "contact_subject": "Konu nedir?",
     "contact_message": "Mesajınızı yazın...",
+    "contact_error": [
+        ["empty", "boş bırakılamaz."],
+        ["more", "daha uzun olmalıdır."],
+        ["less", "daha kısa olmalıdır."],
+        ["form", "bu formda kabul edilmemektedir."]
+    ],
     "contact_button": "Gönder",
     "contact_box1_phone_title":"Telefon",
     "contact_box1_phone_desc":"teelfon açıklaamsı buraya",

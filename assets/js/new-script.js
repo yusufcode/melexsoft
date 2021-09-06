@@ -52,10 +52,7 @@ const typed = new Typed('#typed', {
     typeSpeed: 115,
     backSpeed: 32,
     loop: true
-  })
-
-
-
+})
 
 
 

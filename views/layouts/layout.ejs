@@ -7,13 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
         <!--TITLE--> 
-        <title>MelexSoft</title>
+        <% if(headTitle) {%>
+        <title><%-headTitle%> | Melexsoft</title>
+        <%} else {%>
+        <title>Melexsoft</title>
+        <%}%>
 
         <!--DESCRIPTION--> 
-        <meta name="description" content="MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir." />
+        <meta name="description" content="<%-headDesc%>" />
 
         <!--KEYWORDS--> 
-        <meta name="keywords" content="Application, Clean, SaaS, Dashboard, Bootstrap4" />
+        <meta name="keywords" content="<%-headKeywords%>" />
 
         <!--AUTHOR--> 
         <meta content="sacredthemes" name="author" />

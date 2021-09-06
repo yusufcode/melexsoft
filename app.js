@@ -25,7 +25,7 @@ app.use('/', require('./routes/indexPostRoutes'))
 
 
 //SERVER
-const port = 3000
+const port = 3001
 app.listen(port, (err) => {
     if(err){console.log('SERVER ERROR: ', err)}
     else{console.log('SERVER SUCCESS: ', port)}

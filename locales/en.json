@@ -11,6 +11,31 @@
         ["ge", "German"],
         ["ru", "Russian"]
     ],
+
+    "head_home_title" : "",
+    "head_home_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
+    "head_home_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_services_title" : "Services",
+    "head_services_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
+    "head_services_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_process_title" : "Process",
+    "head_process_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
+    "head_process_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_case_studies_title" : "Case Studies",
+    "head_case_studies_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
+    "head_case_studies_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_contact_title" : "Contact",
+    "head_contact_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
+    "head_contact_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_404_title" : "Page Not Found",
+    "head_404_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_404_keywords" : "Melexsoft, blockchain, crypto...",
+
     "navbar_home" : "Home",
     "navbar_services" : "Services",
     "navbar_process" : "Process",
@@ -116,6 +141,12 @@
     "contact_phone": "Phone Number",
     "contact_subject": "What's the subject?",
     "contact_message": "Your messages...",
+    "contact_error": [
+        ["empty", "can not be empty."],
+        ["more", "must be longer."],
+        ["less", "must be shorter."],
+        ["form", "can not be in this form."]
+    ],
     "contact_button": "Send",
     "contact_box1_phone_title":"Phone",
     "contact_box1_phone_desc":"phone desc here.",

@@ -126,6 +126,41 @@
     border-radius: 10px;
 }
 
+/* Contact Page */
+.form-control.error:focus{
+    border-color: #BC1818;
+}
+
+.form-group .error-message{
+    display: none;
+    padding: 0 15px;
+}
+
+.form-group.error .error-message{
+    display: block;
+}
+
+.form-group.error input{
+    color: #BC1818;
+    border-color: #BC1818;
+}
+
+.form-group .error-message p{
+    display: none;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #BC1818;
+}
+
+.form-group.error.empty .error-message p.empty,
+.form-group.error.more .error-message p.more,
+.form-group.error.less .error-message p.less,
+.form-group.error.form .error-message p.form{
+    display: block;
+}
+
+
+
 /* UPDATE ELEMENTS */
 
 /* BODY */
@@ -316,7 +351,7 @@ html.lg-on body{
 /* form-control */
 .form-control:focus{
     box-shadow: none;
-    border-color: #BC1818;
+    border-color: black;
 }
 
 .btn-primary.focus, .btn-primary:focus{
