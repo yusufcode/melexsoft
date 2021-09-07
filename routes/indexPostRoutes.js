@@ -18,7 +18,11 @@ router.post('/changeLanguage/:lang?', (req, res) => {
 
 router.post('/send-message', async (req, res) => {
 
-    let mailInfo = await req.body
+    const mailInfo = await req.body
+
+    console.log(mailInfo.name)
+
+
 
     const transporter = await nodeMailer.createTransport({
         host: "smtp.yandex.com",
@@ -42,9 +46,15 @@ router.post('/send-message', async (req, res) => {
     
         transporter.sendMail(mail, (err, data) => {
             if(err){
-                console.log(err)
+                res.send({
+                    status: false,
+                    message: req.lang.contact_response_error
+                })
             } else{
-                console.log(data)
+                res.send({
+                    status: true,
+                    message: req.lang.contact_response_success
+                })
             }
         })
 
