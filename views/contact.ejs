@@ -1,5 +1,5 @@
 
-<div class="light-bg about-section section-padding">
+<div class="light-bg about-section section-padding page-contact">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-4">
@@ -88,8 +88,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="<%-lang.contact_button%>">
+                        <input type="submit" class="btn btn-primary disabled" value="<%-lang.contact_button%>">
                     </div>
+                </div>
+                <div class="response-message">
+                    <p class="sending"><%-lang.contact_response_sending%></p>
+                    <p class="success"><%-lang.contact_response_success%></p>
+                    <p class="error"><%-lang.contact_response_error%></p>
                 </div>
             </div>
         </div>

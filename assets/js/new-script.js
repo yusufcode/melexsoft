@@ -47,12 +47,15 @@ for (let i = 0; i < galleries.length; i++) {
 }
 
 //TYPED.JS
-const typed = new Typed('#typed', {
-    strings: ["NFT", "BlockChain"],
-    typeSpeed: 115,
-    backSpeed: 32,
-    loop: true
-})
+if(document.getElementById('typed')){
+    const typed = new Typed('#typed', {
+        strings: ["NFT", "BlockChain"],
+        typeSpeed: 115,
+        backSpeed: 32,
+        loop: true
+    })
+}
+
 
 
 

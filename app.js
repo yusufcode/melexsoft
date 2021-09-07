@@ -20,8 +20,7 @@ app.use(bodyParser.json())
 const languageMw = require('./middlewares/languageMw')
 
 //ROUTES
-app.use('/', languageMw, require('./routes/indexGetRoutes'))
-app.use('/', require('./routes/indexPostRoutes'))
+app.use('/', languageMw, require('./routes/indexGetRoutes'), require('./routes/indexPostRoutes'))
 
 
 //SERVER

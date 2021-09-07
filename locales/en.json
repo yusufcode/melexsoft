@@ -139,8 +139,8 @@
     "contact_lastname": "Last Name",
     "contact_email": "Email Address",
     "contact_phone": "Phone Number",
-    "contact_subject": "What's the subject?",
-    "contact_message": "Your messages...",
+    "contact_subject": "Subject",
+    "contact_message": "Your messages",
     "contact_error": [
         ["empty", "can not be empty."],
         ["more", "must be longer."],
@@ -148,6 +148,9 @@
         ["form", "can not be in this form."]
     ],
     "contact_button": "Send",
+    "contact_response_sending": "The message sending...",
+    "contact_response_success": "Your message successfully sent!",
+    "contact_response_error": "Your message couldn't sent.",
     "contact_box1_phone_title":"Phone",
     "contact_box1_phone_desc":"phone desc here.",
     "contact_box1_phone_number":"+90 (212) 809 7674",
