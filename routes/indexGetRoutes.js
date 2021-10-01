@@ -17,6 +17,17 @@ router.get('/case-studies', (req, res) => {
     res.render('case-studies', {headTitle:req.lang.head_case_studies_title, headDesc:req.lang.head_case_studies_desc, headKeywords:req.lang.head_services_case_studies, activePage: req.lang.navbar_case_studies, navbarClass: 'navbar menu-center', lang: req.lang})
 })
 
+router.get('/career', (req, res) => {
+    res.render('career', {
+        headTitle:req.lang.head_career_title,
+        headDesc:req.lang.head_career_desc,
+        headKeywords:req.lang.head_career_keywords,
+        activePage: req.lang.navbar_career,
+        navbarClass: 'navbar menu-center',
+        lang: req.lang
+    })
+})
+
 router.get('/contact', (req, res) => {
     res.render('contact', {headTitle:req.lang.head_contact_title, headDesc:req.lang.head_contact_desc, headKeywords:req.lang.head_contact_keywords, activePage: req.lang.navbar_contact, navbarClass: 'navbar menu-center', lang: req.lang})
 })

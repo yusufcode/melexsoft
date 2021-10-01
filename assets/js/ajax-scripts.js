@@ -350,3 +350,240 @@ function AjaxSendMessage(name, surname, email, number, subject, message){
 
 }
 
+//JOB APPLICATION MAIL
+
+function inputCheck(text, element, minChar, maxChar, regex){
+
+    if (minChar && text.length < minChar && minChar < maxChar){
+        element.classList.add('error')
+        element.classList.add('more')
+
+        element.classList.remove('less')
+        element.classList.remove('empty')
+        element.classList.remove('form')
+
+        return 0
+    } else if (maxChar && text.length > maxChar && maxChar > minChar){
+        element.classList.add('error')
+        element.classList.add('less')
+
+        element.classList.remove('more')
+        element.classList.remove('empty')
+        element.classList.remove('form')
+
+        return 0
+    } else if (regex && !regex.test(text)){
+        element.classList.add('error')
+        element.classList.add('form')
+
+        element.classList.remove('more')
+        element.classList.remove('empty')
+        element.classList.remove('less')
+
+        return 0
+    } else{
+        element.classList.remove('error')
+        element.classList.remove('empty')
+        element.classList.remove('less')
+        element.classList.remove('more')
+        element.classList.remove('form')
+
+        return 1
+    }
+    
+}
+
+document.querySelector('.page-career .firstName').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/
+
+    inputCheck(text, element, 2, 20, regex)
+    
+})
+
+document.querySelector('.page-career .lastName').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/
+
+    inputCheck(text, element, 2, 20, regex)
+    
+})
+
+document.querySelector('.page-career .placeOfBirth').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/
+
+    inputCheck(text, element, 2, 20, regex)
+    
+})
+
+document.querySelector('.page-career .placeOfResidence').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/
+
+    inputCheck(text, element, 2, 20, regex)
+    
+})
+
+document.querySelector('.page-career .citizenship').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ, ]+$/
+
+    inputCheck(text, element, 2, 25, regex)
+    
+})
+
+document.querySelector('.page-career .email').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    inputCheck(text, element, 2, 25, regex)
+    
+})
+
+document.querySelector('.page-career .phone').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g
+
+    inputCheck(text, element, 2, 25, regex)
+    
+})
+
+document.querySelector('.page-career .programmingLanguages').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .frameworks').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .databases').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .tools').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .operatingSystems').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .languages').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 150, regex)
+    
+})
+
+document.querySelector('.page-career .experience').addEventListener('keyup', function(){
+
+    const text = this.value
+    const element = this.closest('.form-group')
+    const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/
+
+    inputCheck(text, element, 2, 500, regex)
+    
+})
+
+if(document.querySelector('.career-form input[type="submit"]')){
+
+    document.querySelector('.career-form input[type="submit"]').onclick = function(){
+
+        const firstName = document.querySelector('.page-career .firstName').value
+        const lastName = document.querySelector('.page-career .lastName').value
+        const gender = document.querySelector('.page-career .gender').value
+        const dateOfBirth = document.querySelector('.page-career .dateOfBirth').value
+        const placeOfBirth = document.querySelector('.page-career .placeOfBirth').value
+        const placeOfResidence = document.querySelector('.page-career .placeOfResidence').value
+        const citizenship = document.querySelector('.page-career .citizenship').value
+        const email = document.querySelector('.page-career .email').value
+        const phone = document.querySelector('.page-career .phone').value
+        const programmingLanguages = document.querySelector('.page-career .programmingLanguages').value
+        const frameworks = document.querySelector('.page-career .frameworks').value
+        const databases = document.querySelector('.page-career .databases').value
+        const tools = document.querySelector('.page-career .tools').value
+        const operatingSystems = document.querySelector('.page-career .operatingSystems').value
+        const languages = document.querySelector('.page-career .languages').value
+        const experience = document.querySelector('.page-career .experience').value
+    
+        document.querySelector('.career-form').style.display = 'none'
+        document.querySelector('.page-career .response-message').classList.add('sending')
+        
+        AjaxJobApplication(firstName, lastName, gender, dateOfBirth, placeOfBirth, placeOfResidence, citizenship, email, phone, programmingLanguages, frameworks, databases, tools, operatingSystems, languages, experience)
+        
+    }
+    
+}
+
+function AjaxJobApplication(firstName, lastName, gender, dateOfBirth, placeOfBirth, placeOfResidence, citizenship, email, phone, programmingLanguages, frameworks, databases, tools, operatingSystems, languages, experience){
+
+    const ajax = new XMLHttpRequest()
+    ajax.open('POST', '/job-application', true)
+    ajax.setRequestHeader('Content-Type', 'application/json; charset=UTF-8')
+    ajax.send(JSON.stringify({firstName, lastName, gender, dateOfBirth, placeOfBirth, placeOfResidence, citizenship, email, phone, programmingLanguages, frameworks, databases, tools, operatingSystems, languages, experience}))
+    ajax.onreadystatechange = handelRequestStateChange
+
+    function handelRequestStateChange(){
+        if(ajax.readyState == 4 && ajax.status == 200){
+            const response = JSON.parse(ajax.response)
+            if(response.status == false){
+                document.querySelector('.page-career .response-message').classList.remove('sending')
+                document.querySelector('.page-career .response-message').classList.add('error')
+                alert(response.message)
+            } else{
+                document.querySelector('.page-career .response-message').classList.remove('sending')
+                document.querySelector('.page-career .response-message').classList.add('success')
+                alert(response.message)
+                location.replace('/')
+            }
+        }
+    }
+}

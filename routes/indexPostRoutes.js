@@ -20,10 +20,6 @@ router.post('/send-message', async (req, res) => {
 
     const mailInfo = await req.body
 
-    console.log(mailInfo.name)
-
-
-
     const transporter = await nodeMailer.createTransport({
         host: "smtp.yandex.com",
         port: 465,
@@ -60,6 +56,50 @@ router.post('/send-message', async (req, res) => {
 
     })
 
+})
+
+router.post('/job-application', async (req, res) => {
+
+    const mailInfo = await req.body
+
+    console.log(mailInfo)
+    
+    const transporter = nodeMailer.createTransport({
+        host: "smtp.yandex.com",
+        port: 465,
+        secure: true,
+        auth: {
+            user: "system@melexsoft.com",
+            pass: 'ccfevrtzowefuowa'
+        },
+        tls: {rejectUnauthorized: false}
+    })
+
+    ejs.renderFile('./views/layouts/mail-job-application.ejs', {mailInfo: mailInfo}, async (err, data) => {
+
+        const mail = await {
+            from: "system@melexsoft.com",
+            to: "system@melexsoft.com",
+            subject: "İş Başvurusu",
+            html: data
+        }
+    
+        transporter.sendMail(mail, (err, data) => {
+            if(err){
+                res.send({
+                    status: false,
+                    message: req.lang.career_response_error
+                })
+            } else{
+                res.send({
+                    status: true,
+                    message: req.lang.career_response_success
+                })
+            }
+        })
+
+    })
+    
 })
 
 module.exports = router

@@ -170,33 +170,57 @@
     display: block;
 }
 
-.page-contact .response-message{
+.response-message{
     display: none;
     text-align: center;
 }
 
-.page-contact .response-message p{
+.response-message p{
     display: none;
     font-size: 20px;
     margin: 225px 0;
 }
 
-.page-contact .response-message.sending,
-.page-contact .response-message.success,
-.page-contact .response-message.error{
+.response-message.sending,
+.response-message.success,
+.response-message.error{
     display: block;
 }
 
-.page-contact .response-message.sending p.sending{
+.response-message.sending p.sending{
     display: block;
 }
 
-.page-contact .response-message.success p.success{
+.response-message.success p.success{
     display: block;
 }
 
-.page-contact .response-message.error p.error{
+.response-message.error p.error{
     display: block;
+}
+
+/* CAREER PAGE */
+
+.page-career .input-groups-title{
+    margin: 17.5px 0 10px 0;
+    /* padding-left: 15px; */
+}
+
+.page-career select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), calc(100% - 2.5em) 0.75em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.page-career textarea{
+    height: 100px;
+}
+
+.page-career textarea.experience{
+    height: 160px;
 }
 
 /* UPDATE ELEMENTS */
@@ -357,10 +381,13 @@ html.lg-on body{
 }
 
 /* form-row > col */
+.form-row{
+    margin-bottom: 10px;
+}
+
 .form-row .form-group{
     padding: 0 5px;
     margin: 0;
-    margin-bottom: 10px;
 }
 
 /* span in h tags */

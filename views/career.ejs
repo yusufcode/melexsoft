@@ -1,0 +1,189 @@
+<div class="light-bg about-section section-padding page-career">
+    <div class="container">
+        <div class="heading-wrapper with-separator">
+            <span class="sub-title"><%-lang.career_title2%></span>
+            <h2 class="h1"><%-lang.career_title1%></h2>
+        </div><!-- End Heading -->
+        <div class="text-wrapper">
+            <p><%-lang.career_desc%></p>
+        </div>
+        <div class="career-form">
+            <div class="input-groups-title">
+                <h5><%-lang.career_personalInformationTitle%></h5>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control firstName" placeholder="<%-lang.form_firstName%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_firstName%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control lastName" placeholder="<%-lang.form_lastName%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_lastName%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <select class="form-control gender">
+                        <% for (let i = 0; i < lang.form_genders.length; i++) { %>
+    
+                            <% if(!(i == 0)) {%>
+                            <option value="<%-lang.form_genders[i]%>"><%-lang.form_genders[i]%></option>
+                            <% } else{%>
+                            <option disabled selected value=""><%-lang.form_genders[i]%></option>
+                            <% } %>
+    
+                        <% } %>
+                    </select>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_firstname%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="date" class="form-control dateOfBirth" placeholder="<%-lang.form_dateOfBirth%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_dateOfBirth%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control placeOfBirth" placeholder="<%-lang.form_placeOfBirth%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_placeOfBirth%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control placeOfResidence" placeholder="<%-lang.form_placeOfResidence%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_placeOfResidence%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control citizenship" placeholder="<%-lang.form_citizenship%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_citizenship%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="input-groups-title">
+                <h5><%-lang.career_contactInformationTitle%></h5>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="email" class="form-control email" placeholder="<%-lang.form_email%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_email%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control phone" placeholder="<%-lang.form_phone%>">
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_phone%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="input-groups-title">
+                <h5><%-lang.career_skillsTitle%></h5>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <textarea class="form-control programmingLanguages" placeholder="<%-lang.form_programmingLanguages%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_programmingLanguages%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea class="form-control frameworks" placeholder="<%-lang.form_frameworks%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_frameworks%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <textarea class="form-control databases" placeholder="<%-lang.form_databases%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_databases%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea class="form-control tools" placeholder="<%-lang.form_tools%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_tools%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <textarea class="form-control operatingSystems" placeholder="<%-lang.form_operatingSystems%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_operatingSystems%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea class="form-control languages" placeholder="<%-lang.form_languages%>"></textarea>
+                    <div class="error-message">
+                        <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                        <p class="<%-lang.form_error[i][0]%>"><%-lang.form_languages%> <%-lang.form_error[i][1]%></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="input-groups-title">
+                <h5><%-lang.career_experiencesTitle%></h5>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control experience" placeholder="<%-lang.form_experience%>"></textarea>
+                <div class="error-message">
+                    <% for (let i = 0; i < lang.form_error.length; i++) { %>
+                    <p class="<%-lang.form_error[i][0]%>"><%-lang.form_experience%> <%-lang.form_error[i][1]%></p>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="<%-lang.form_button%>">
+            </div>
+        </div>
+        <div class="response-message">
+            <p class="sending"><%-lang.career_response_sending%></p>
+            <p class="success"><%-lang.career_response_success%></p>
+            <p class="error"><%-lang.career_response_error%></p>
+        </div>
+    </div>
+</div> 
+<div class="map-custom-embed">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.3728410130734!2d28.978542829250976!3d41.03638261029184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab766d0fddca1%3A0xa77f81fb558f5ce3!2sTaksim%20360!5e0!3m2!1sen!2str!4v1629459462726!5m2!1sen!2str" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>

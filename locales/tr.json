@@ -41,6 +41,7 @@
     "navbar_process" : "Süreç",
     "navbar_case_studies" : "Case Studies",
     "navbar_blog" : "Blog",
+    "navbar_career" : "Kariyer",
     "navbar_contact" : "İletişim",
 
     "footer_desc" : "Melexsoft, BlockChain altyapısını kullanarak gerçek hayat çözümleri üreten bir teknoloji şirketidir.",
@@ -132,22 +133,20 @@
     "case_studies2_purpose_text": "Case Studies 2 amaç yazısı buraya gelecek",
     "case_studies2_result_text": "Case Studies 2 sonuç yazısı buraya gelecek",
 
+    "career_title1": "İş Başvurusu",
+    "career_title2": "Aramıza Katıl",
+    "career_desc": "Hakkınızda daha fazla bilgi edinebilmemiz için lütfen boşlukları doldurun.",
+    "career_personalInformationTitle": "Kişisel Bilgileriniz",
+    "career_contactInformationTitle": "İletişim Bilgileriniz",
+    "career_skillsTitle": "Yetenekleriniz",
+    "career_experiencesTitle": "Deneyimleriniz",
+    "career_response_sending": "İş başvuru formunuz gönderiliyor...",
+    "career_response_success": "İş başvuru formunuz başarılı bir şekilde tarafımıza iletilmiştir.",
+    "career_response_error": "İş başvuru formunuz bir nedenden dolayı gönderilememiştir.",
+
     "contact_title1": "İletişime Geçin",
     "contact_title2": "Aradan Su Sızmasın",
     "contact_desc": "İletişim açıklaması buraya gelecek.",
-    "contact_firstname": "Ad",
-    "contact_lastname": "Soyad",
-    "contact_email": "Email Adresi",
-    "contact_phone": "Telefon Numarası",
-    "contact_subject": "Konu",
-    "contact_message": "Mesaj",
-    "contact_error": [
-        ["empty", "boş bırakılamaz."],
-        ["more", "daha uzun olmalıdır."],
-        ["less", "daha kısa olmalıdır."],
-        ["form", "bu formda kabul edilmemektedir."]
-    ],
-    "contact_button": "Gönder",
     "contact_response_sending": "Mesajınız gönderiliyor...",
     "contact_response_success": "Mesajınız başarılı bir şekilde tarafımıza iletilmiştir.",
     "contact_response_error": "Mesajınız bir nedenden dolayı gönderilememiştir.",
@@ -158,12 +157,35 @@
     "contact_box2_email_desc":"mail açıklaamsı buraya",
     "contact_box2_email_address":"support@melexsoft.com",
 
+    "form_firstName": "Ad",
+    "form_lastName": "Soyad",
+    "form_email": "Email Adresi",
+    "form_phone": "Telefon Numarası",
+    "form_subject": "Konu",
+    "form_message": "Mesaj",
+    "form_dateOfBirth": "Doğum Tarihi",
+    "form_placeOfBirth": "Doğum Yeri",
+    "form_placeOfResidence": "İkamet Yeri",
+    "form_citizenship": "Vatandaşlık",
+    "form_experience": "IT sektöründeki deneyimlerinizden kısaca bahsedin.",
+    "form_programmingLanguages": "Programlama dilleri: Javascript, Ruby, C#...",
+    "form_frameworks": "Framework'ler: AWS, Spring...",
+    "form_databases": "Veri Tabanları: MySql, Mongodn, Redis...",
+    "form_tools": "Araçlar: Git, Eclipse, Ant...",
+    "form_operatingSystems": "İşletim Sistemleri: MacOS, Linux, Windows...",
+    "form_languages": "Diller: Türkçe, İngilizce, Almanca...",
+    "form_genders": ["Cinsiyet","Erkek","Kadın"],
+    "form_error": [
+        ["empty", "boş bırakılamaz."],
+        ["more", "daha uzun olmalıdır."],
+        ["less", "daha kısa olmalıdır."],
+        ["form", "bu formda kabul edilmemektedir."]
+    ],
+    "form_button": "Gönder",
+    "form_required": "Gerekli",
+
     "not_found_title": ["Ahh","burada bir şey yok..."],
     "not_found_desc": "Aradığınız sayfaya ulaşamadık.",
     "not_found_button": "Anasayfaya git"
-
-
-
-
 
 }

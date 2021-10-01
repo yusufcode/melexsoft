@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    h3{
+        margin-bottom: 0;
+    }
+    
+    p{
+        margin: 0px;
+        margin-bottom: 2.5px;
+    }
+    </style>
+</head>
+<body>
+
+    <h3>Kişisel Bilgileri:</h3>
+    <p><b>Ad: </b><%= mailInfo.firstName %></p>
+    <p><b>Soyad: </b><%= mailInfo.lastName %></p>
+    <p><b>Cinsiyet: </b><%= mailInfo.gender %></p>
+    <p><b>Doğum Günü: </b><%= mailInfo.dateOfBirth %></p>
+    <p><b>Doğum Yeri: </b><%= mailInfo.placeOfBirth %></p>
+    <p><b>İkamet Yeri: </b><%= mailInfo.placeOfResidence %></p>
+    <p><b>Vatandaşlık: </b><%= mailInfo.citizenship %></p>
+    <br>
+    <h3>İletişim Bilgileri:</h3>
+    <p><b>Email: </b><%= mailInfo.email %></p>
+    <p><b>Telefon: </b><%= mailInfo.phone %></p>
+    <br>
+    <h3>Yetenekleri:</h3>
+    <p><b>Programlama Dilleri: </b><%= mailInfo.programmingLanguages %></p>
+    <p><b>Framework'ler: </b><%= mailInfo.frameworks %></p>
+    <p><b>Veritabanları: </b><%= mailInfo.databases %></p>
+    <p><b>Araçlar: </b><%= mailInfo.tools %></p>
+    <p><b>İşletim Sistemleri: </b><%= mailInfo.operatingSystems %></p>
+    <p><b>Diller: </b><%= mailInfo.languages %></p>
+    <br>
+    <h3>Deneyimleri:</h3>
+    <p><b>Deneyim: </b><%= mailInfo.experience %></p>
+    
+</body>
+</html>
