@@ -140,12 +140,9 @@
     display: block;
 }
 
-.form-group.error input{
-    color: #BC1818;
-    border-color: #BC1818;
-}
-
-.form-group.error textarea{
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select{
     color: #BC1818;
     border-color: #BC1818;
 }
@@ -166,7 +163,8 @@
 .form-group.error.empty .error-message p.empty,
 .form-group.error.more .error-message p.more,
 .form-group.error.less .error-message p.less,
-.form-group.error.form .error-message p.form{
+.form-group.error.form .error-message p.form,
+.form-group.error.select .error-message p.select{
     display: block;
 }
 

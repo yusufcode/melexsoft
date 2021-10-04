@@ -179,7 +179,8 @@
         ["empty", "can not be empty."],
         ["more", "must be longer."],
         ["less", "must be shorter."],
-        ["form", "can not be in this form."]
+        ["form", "can not be in this form."],
+        ["select", "must be selected."]
     ],
     "form_button": "Send",
     "form_required": "Required",

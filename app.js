@@ -25,7 +25,7 @@ app.use('/', languageMw, require('./routes/indexGetRoutes'), require('./routes/i
 
 //SERVER
 const port = 3001
-app.listen(port, (err) => {
+app.listen(port, '0.0.0.0', (err) => {
     if(err){console.log('SERVER ERROR: ', err)}
     else{console.log('SERVER SUCCESS: ', port)}
 })

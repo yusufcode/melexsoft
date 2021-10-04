@@ -179,7 +179,8 @@
         ["empty", "boş bırakılamaz."],
         ["more", "daha uzun olmalıdır."],
         ["less", "daha kısa olmalıdır."],
-        ["form", "bu formda kabul edilmemektedir."]
+        ["form", "bu formda kabul edilmemektedir."],
+        ["select", "seçilmelidir."]
     ],
     "form_button": "Gönder",
     "form_required": "Gerekli",
