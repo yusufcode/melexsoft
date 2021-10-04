@@ -39,18 +39,18 @@
                 <div class="contact-form">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control name" placeholder="<%-lang.form_firstName%>">
+                            <input type="text" class="form-control firstName" placeholder="<%-lang.form_firstName%>">
                             <div class="error-message">
                                 <% for (let i = 0; i < lang.form_error.length; i++) { %>
-                                <p class="<%-lang.form_error[i][0]%>"><%-lang.form_firstname%> <%-lang.form_error[i][1]%></p>
+                                <p class="<%-lang.form_error[i][0]%>"><%-lang.form_firstName%> <%-lang.form_error[i][1]%></p>
                                 <% } %>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control surname" placeholder="<%-lang.form_lastName%>">
+                            <input type="text" class="form-control lastName" placeholder="<%-lang.form_lastName%>">
                             <div class="error-message">
                                 <% for (let i = 0; i < lang.form_error.length; i++) { %>
-                                <p class="<%-lang.form_error[i][0]%>"><%-lang.form_lastname%> <%-lang.form_error[i][1]%></p>
+                                <p class="<%-lang.form_error[i][0]%>"><%-lang.form_lastName%> <%-lang.form_error[i][1]%></p>
                                 <% } %>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control number" placeholder="<%-lang.form_phone%>">
+                        <input type="text" class="form-control phone" placeholder="<%-lang.form_phone%>">
                         <div class="error-message">
                             <% for (let i = 0; i < lang.form_error.length; i++) { %>
                             <p class="<%-lang.form_error[i][0]%>"><%-lang.form_phone%> <%-lang.form_error[i][1]%></p>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary disabled" value="<%-lang.form_button%>">
+                        <input type="submit" class="btn btn-primary" value="<%-lang.form_button%>">
                     </div>
                 </div>
                 <div class="response-message">

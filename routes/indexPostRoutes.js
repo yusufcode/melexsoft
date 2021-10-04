@@ -40,45 +40,111 @@ router.post('/changeLanguage/:lang?', (req, res) => {
 
 })
 
-router.post('/send-message', async (req, res) => {
+router.post('/contact', async (req, res) => {
+
+    let {firstNameCheck, lastNameCheck, emailCheck, phoneCheck, subjectCheck, messageCheck} = false
+    let {firstNameProblem, lastNameProblem, emailProblem, phoneProblem, subjectProblem, messageProblem} = ''
 
     const mailInfo = await req.body
 
-    const transporter = await nodeMailer.createTransport({
-        host: "smtp.yandex.com",
-        port: 465,
-        secure: true,
-        auth: {
-            user: "system@melexsoft.com",
-            pass: 'ccfevrtzowefuowa'
-        },
-        tls: {rejectUnauthorized: false}
-    })
-
-    ejs.renderFile('./views/layouts/mail.ejs', {mailInfo: mailInfo}, async (err, data) => {
-
-        const mail = await {
-            from: "system@melexsoft.com",
-            to: "system@melexsoft.com",
-            subject: "Melexsoft.com'dan Yeni Bir Mesaj",
-            html: data
-        }
+    if(inputCheck(req.body.firstName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ ]+$/, false) == true){
+        firstNameCheck = true
+    } else{
+        firstNameCheck = false
+        firstNameProblem = inputCheck(req.body.firstName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ ]+$/, false)
+    }
     
-        transporter.sendMail(mail, (err, data) => {
-            if(err){
-                res.send({
-                    status: false,
-                    message: req.lang.contact_response_error
-                })
-            } else{
-                res.send({
-                    status: true,
-                    message: req.lang.contact_response_success
-                })
-            }
-        })
+    if(inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false) == true){
+        lastNameCheck = true
+    } else{
+        lastNameCheck = false
+        lastNameProblem = inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
+    }
 
-    })
+    if(inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false) == true){
+        emailCheck = true
+    } else{
+        emailCheck = false
+        emailProblem = inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false)
+    }
+    
+    if(inputCheck(req.body.phone, 6, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false) == true){
+        phoneCheck = true
+    } else{
+        phoneCheck = false
+        phoneProblem = inputCheck(req.body.phone, 2, 25, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false)
+    }
+
+    if(inputCheck(req.body.subject, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false) == true){
+        subjectCheck = true
+    } else{
+        subjectCheck = false
+        subjectProblem = inputCheck(req.body.subject, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
+    }
+
+    if(inputCheck(req.body.message, 10, 500, /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/, false) == true){
+        messageCheck = true
+    } else{
+        messageCheck = false
+        messageProblem = inputCheck(req.body.message, 10, 500, /^[a-zA-ZğüşöçİĞÜŞÖÇ.,!? ()#]+$/, false)
+    }
+
+    if(firstNameCheck && lastNameCheck && emailCheck && phoneCheck && subjectCheck && messageCheck){
+
+        const transporter = await nodeMailer.createTransport({
+            host: "smtp.yandex.com",
+            port: 465,
+            secure: true,
+            auth: {
+                user: "system@melexsoft.com",
+                pass: 'ccfevrtzowefuowa'
+            },
+            tls: {rejectUnauthorized: false}
+        })
+    
+        ejs.renderFile('./views/layouts/mail.ejs', {mailInfo: mailInfo}, async (err, data) => {
+    
+            const mail = await {
+                from: "system@melexsoft.com",
+                to: "system@melexsoft.com",
+                subject: "Melexsoft.com'dan Yeni Bir Mesaj",
+                html: data
+            }
+        
+            transporter.sendMail(mail, (err, data) => {
+                if(err){
+                    res.send({
+                        status: false,
+                        message: req.lang.contact_response_error
+                    })
+                } else{
+                    res.send({
+                        status: true,
+                        message: req.lang.contact_response_success
+                    })
+                }
+            })
+    
+        })
+        
+    } else{
+
+        res.send({
+            status: false,
+            message: req.lang.contact_response_error,
+            errors: [
+                ["firstName", firstNameProblem],
+                ["lastName", lastNameProblem], 
+                ["email", emailProblem], 
+                ["phone", phoneProblem], 
+                ["subject", subjectProblem],
+                ["message", messageProblem]
+            ]
+        })
+        
+    }
+
+    
 
 })
 
@@ -88,7 +154,6 @@ router.post('/job-application', async (req, res) => {
     let {firstNameProblem, lastNameProblem, genderProblem, dateOfBirthProblem, placeOfBirthProblem, placeOfResidenceProblem, citizenshipProblem, emailProblem, phoneProblem, programmingLangProblem, frameworksProblem, databasesProblem, toolsProblem, operatingSystemsProblem, languagesProblem, experienceProblem} = ''
     
     const mailInfo = await req.body
-    console.log(mailInfo)
 
     if(inputCheck(req.body.firstName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ ]+$/, false) == true){
         firstNameCheck = true
@@ -123,7 +188,6 @@ router.post('/job-application', async (req, res) => {
     } else{
         placeOfBirthCheck = false
         placeOfBirthProblem = inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
-
     }
     
     if(inputCheck(req.body.placeOfResidence, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false) == true){
@@ -200,7 +264,7 @@ router.post('/job-application', async (req, res) => {
         experienceCheck = true
     } else{
         experienceCheck = false
-        experienceProblem = inputCheck(req.body.experience, 10, 500, /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/, false)
+        experienceProblem = inputCheck(req.body.experience, 10, 500, /^[a-zA-ZğüşöçİĞÜŞÖÇ.,!? ()#]+$/, false)
     }
 
     if(firstNameCheck && lastNameCheck && genderCheck && placeOfBirthCheck && placeOfResidenceCheck && citizenshipCheck && emailCheck && phoneCheck && programmingLangCheck && frameworksCheck && databasesCheck && toolsCheck && operatingSystemsCheck && languagesCheck && experienceCheck){
