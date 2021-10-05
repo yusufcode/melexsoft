@@ -388,6 +388,20 @@ html.lg-on body{
     margin: 0;
 }
 
+@media(max-width:768px){
+    .form-row{
+        margin-bottom: 0px;
+    }
+
+    .form-row .form-group{
+        margin-bottom: 5px;
+    }
+
+    .form-group{
+        margin-bottom: 5px;
+    }
+}
+
 /* span in h tags */
 .heading-wrapper span{
     color: #BC1818;

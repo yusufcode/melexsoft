@@ -133,7 +133,7 @@ if(document.querySelector('.page-contact')){
         const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ.,?! ()#]+$/
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 500, regex, false)
+            inputCheck(text, element, 10, 500, regex, false)
         }
         
     })
