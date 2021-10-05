@@ -97,7 +97,7 @@ if(document.querySelector('.page-contact')){
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 25, regex, false)
+            inputCheck(text, element, 7, 30, regex, false)
         }
         
     })
@@ -109,7 +109,7 @@ if(document.querySelector('.page-contact')){
         const regex = /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 25, regex, false)
+            inputCheck(text, element, 7, 15, regex, false)
         }
         
     })
@@ -121,7 +121,7 @@ if(document.querySelector('.page-contact')){
         const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/
     
         if(useInputCheck)[
-            inputCheck(text, element, 2, 20, regex, false)
+            inputCheck(text, element, 3, 20, regex, false)
         ]
         
     })
@@ -150,6 +150,9 @@ if(document.querySelector('.page-contact')){
             const message = document.querySelector('.page-contact .message').value
         
             AjaxContact(firstName, lastName, email, phone, subject, message)
+
+            document.body.scrollTop = 0
+            document.documentElement.scrollTop = 0
     
             document.querySelector('.page-contact .contact-form').style.display = 'none'
             document.querySelector('.page-contact .response-message').classList.add('sending')
@@ -295,7 +298,7 @@ if(document.querySelector('.page-career')){
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 25, regex, false)
+            inputCheck(text, element, 7, 30, regex, false)
         }
         
     })
@@ -307,7 +310,7 @@ if(document.querySelector('.page-career')){
         const regex = /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 25, regex, false)
+            inputCheck(text, element, 7, 25, regex, false)
         }
         
     })
@@ -391,7 +394,7 @@ if(document.querySelector('.page-career')){
         const regex = /^[a-zA-ZğüşöçİĞÜŞÖÇ.,?! ()#]+$/
     
         if(useInputCheck){
-            inputCheck(text, element, 2, 500, regex, false)
+            inputCheck(text, element, 10, 500, regex, false)
         }
         
     })
@@ -419,6 +422,9 @@ if(document.querySelector('.page-career')){
         
             AjaxJobApplication(firstName, lastName, gender, dateOfBirth, placeOfBirth, placeOfResidence, citizenship, email, phone, programmingLanguages, frameworks, databases, tools, operatingSystems, languages, experience)
     
+            document.body.scrollTop = 0
+            document.documentElement.scrollTop = 0
+            
             document.querySelector('.page-career .career-form').style.display = 'none'
             document.querySelector('.page-career .response-message').classList.add('sending')
             

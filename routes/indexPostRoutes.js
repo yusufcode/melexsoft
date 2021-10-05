@@ -61,25 +61,25 @@ router.post('/contact', async (req, res) => {
         lastNameProblem = inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
     }
 
-    if(inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false) == true){
+    if(inputCheck(req.body.email, 7, 30, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false) == true){
         emailCheck = true
     } else{
         emailCheck = false
-        emailProblem = inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false)
+        emailProblem = inputCheck(req.body.email, 7, 30, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false)
     }
     
-    if(inputCheck(req.body.phone, 6, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false) == true){
+    if(inputCheck(req.body.phone, 7, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false) == true){
         phoneCheck = true
     } else{
         phoneCheck = false
-        phoneProblem = inputCheck(req.body.phone, 2, 25, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false)
+        phoneProblem = inputCheck(req.body.phone, 7, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false)
     }
 
-    if(inputCheck(req.body.subject, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false) == true){
+    if(inputCheck(req.body.subject, 3, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false) == true){
         subjectCheck = true
     } else{
         subjectCheck = false
-        subjectProblem = inputCheck(req.body.subject, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
+        subjectProblem = inputCheck(req.body.subject, 3, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
     }
 
     if(inputCheck(req.body.message, 10, 500, /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/, false) == true){
@@ -169,14 +169,14 @@ router.post('/job-application', async (req, res) => {
         lastNameProblem = inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/, false)
     }
 
-    if(inputCheck(req.body.gender, 2, 10, false, true) == true){
+    if(inputCheck(req.body.gender, false, false, false, true) == true){
         genderCheck = true
     } else{
         genderCheck = false
         genderProblem = inputCheck(req.body.gender, false, false, false, true)
     }
 
-    if(inputCheck(req.body.dateOfBirth, 2, 10, false, true) == true){
+    if(inputCheck(req.body.dateOfBirth, false, false, false, true) == true){
         dateOfBirthCheck = true
     } else{
         dateOfBirthCheck = false
@@ -204,18 +204,18 @@ router.post('/job-application', async (req, res) => {
         citizenshipProblem = inputCheck(req.body.lastName, 2, 20, /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/), false
     }
     
-    if(inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false) == true){
+    if(inputCheck(req.body.email, 7, 30, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false) == true){
         emailCheck = true
     } else{
         emailCheck = false
-        emailProblem = inputCheck(req.body.email, 2, 25, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false)
+        emailProblem = inputCheck(req.body.email, 7, 30, /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, false)
     }
     
-    if(inputCheck(req.body.phone, 6, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false) == true){
+    if(inputCheck(req.body.phone, 7, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false) == true){
         phoneCheck = true
     } else{
         phoneCheck = false
-        phoneProblem = inputCheck(req.body.phone, 2, 25, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false)
+        phoneProblem = inputCheck(req.body.phone, 7, 15, /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/g, false)
     }
     
     if(inputCheck(req.body.programmingLanguages, 2, 150, /^[a-zA-ZğüşöçİĞÜŞÖÇ., ()#]+$/, false) == true){

@@ -223,6 +223,11 @@
 
 /* UPDATE ELEMENTS */
 
+/* Html */
+html{
+    scroll-behavior: smooth;
+}
+
 /* Section Padding */
 .section-padding{
     padding: 50px 0;
