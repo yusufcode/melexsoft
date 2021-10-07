@@ -204,6 +204,12 @@
     /* padding-left: 15px; */
 }
 
+.page-career .input-groups-title h3{
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
 .page-career select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -281,10 +287,6 @@ html.lg-on body{
     background-color: #fff7f7;
 }
 
-.heading-wrapper h5 span{
-    display: inline-block;
-}
-
 @media(max-width: 991px){
     .btn-wrapper > .btn-primary{
         margin-right: 10px;
@@ -297,6 +299,52 @@ html.lg-on body{
     .btn + .btn{
         margin-top: 0;
     }
+}
+
+/* PAGES */
+
+/* PAGE-INDEX */
+.heading-wrapper h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.heading-wrapper h3::after{
+    display: none!important;
+}
+
+.heading-wrapper h3 span{
+    display: inline-block;
+}
+
+.features-block.theme-one h3{
+    font-size: 24px;
+}
+
+.icon-box.theme-two h3{
+    font-size: 24px;
+}
+
+/* PAGE-SERVICES */
+.icon-box.theme-two h2{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+/* CONTACT - CAREER */
+.heading-wrapper h2.sub-title{
+    color: #BC1818;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.heading-wrapper h2.sub-title::after{
+    display: none!important;
 }
 
 /* FOOTER */
