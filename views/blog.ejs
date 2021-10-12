@@ -1,0 +1,39 @@
+<div class="light-bg about-section section-padding page-career">
+  <div class="container">
+
+    <div class="row clearfix justify-content-center wow fadeInDown" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+      <div class="col-lg-8">
+          <div class="heading-wrapper with-separator text-center">
+              <h1><%-lang.blog_title%></h1>
+              <p class="lead-text"><%-lang.blog_desc%></p>
+          </div>
+      </div>
+    </div>
+    
+    <div class="blog-cards">
+
+      <% for (let i = 0; i < lang.blogs.length; i++) { %>
+        
+        <div class="blog-card-cover">
+          <a href="<%-lang.blogs[i].blog_url%>" class="blog-card">
+            <div class="img-cover">
+              <img src="<%-lang.blogs[i].blog_image%>" alt="">
+            </div>
+  
+            <div class="texts-cover">
+              <div class="title-cover">
+                <h2><%-lang.blogs[i].blog_title%></h2>
+              </div>
+    
+              <div class="desc-cover">
+                <p><%-lang.blogs[i].blog_short_text%></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      <% } %>
+      
+    </div>
+  </div>
+</div> 

@@ -28,6 +28,14 @@
     "head_case_studies_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
     "head_case_studies_keywords" : "Melexsoft, blockchain, crypto...",
 
+    "head_blog_title" : "Blog",
+    "head_blog_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_blog_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_career_title" : "Kariyer",
+    "head_career_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_career_keywords" : "Melexsoft, blockchain, crypto...",
+
     "head_contact_title" : "İletişim",
     "head_contact_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
     "head_contact_keywords" : "Melexsoft, blockchain, crypto...",
@@ -133,6 +141,9 @@
     "case_studies2_purpose_text": "Case Studies 2 amaç yazısı buraya gelecek",
     "case_studies2_result_text": "Case Studies 2 sonuç yazısı buraya gelecek",
 
+    "blog_title": "Blog",
+    "blog_desc": "Yaptığımız işlerle alakalı bazı bilgilendirici yazılırımızı bu sayfada bulabilirsiniz.",
+
     "career_title1": "İş Başvurusu",
     "career_title2": "Aramıza Katıl",
     "career_desc": "Hakkınızda daha fazla bilgi edinebilmemiz için lütfen boşlukları doldurun.",
@@ -187,6 +198,30 @@
 
     "not_found_title": ["Ahh","burada bir şey yok..."],
     "not_found_desc": "Aradığınız sayfaya ulaşamadık.",
-    "not_found_button": "Anasayfaya git"
+    "not_found_button": "Anasayfaya git",
+
+    "blogs": [
+        {
+            "blog_head_title": "NFT Nedir?",
+            "blog_head_desc": "NFT nedir bu yazımızda açıkladık.",
+            "blog_head_keywords": "nft nedir, nft",
+            "blog_image": "https://via.placeholder.com/1920x768",
+            "blog_title": "Nft Nedir?",
+            "blog_url": "what-is-nft",
+            "blog_short_text": "nft nedir bu yazımızda açıkladık.",
+            "blog_text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates provident assumenda at accusantium minima obcaecati, architecto doloremque commodi mollitia! Ut omnis obcaecati officia modi nobis sequi necessitatibus asperiores error repellat, ullam dignissimos consequatur vero nisi voluptatem animi placeat, quaerat expedita beatae consectetur illum nihil voluptas est itaque! Labore mollitia doloremque unde ratione, enim illum, ex provident ad optio, expedita quas tempora eum id suscipit ullam. Quod beatae facere et laboriosam quis, cum quibusdam facilis molestias?"
+        },
+        {
+            "blog_head_title": "Blockchain Nedir?",
+            "blog_head_desc": "Blockchain nedir bu yazımızda açıkladık.",
+            "blog_head_keywords": "blockchain nedir, blockchain",
+            "blog_image": "https://via.placeholder.com/1920x768",
+            "blog_title": "Blockchain Nedir?",
+            "blog_url": "what-is-blockchain",
+            "blog_short_text": "blockchain nedir bu yazımızda açıkladık.",
+            "blog_text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates provident assumenda at accusantium minima obcaecati, architecto doloremque commodi mollitia! Ut omnis obcaecati officia modi nobis sequi necessitatibus asperiores error repellat, ullam dignissimos consequatur vero nisi voluptatem animi placeat, quaerat expedita beatae consectetur illum nihil voluptas est itaque! Labore mollitia doloremque unde ratione, enim illum, ex provident ad optio, expedita quas tempora eum id suscipit ullam. Quod beatae facere et laboriosam quis, cum quibusdam facilis molestias?"
+        }
+    
+    ]
 
 }

@@ -28,6 +28,14 @@
     "head_case_studies_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
     "head_case_studies_keywords" : "Melexsoft, blockchain, crypto...",
 
+    "head_blog_title" : "Blog",
+    "head_blog_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_blog_keywords" : "Melexsoft, blockchain, crypto...",
+
+    "head_career_title" : "Career",
+    "head_career_desc" : "MelexSoft 2021 yılında kurulmuş bir yazılım şirketidir.",
+    "head_career_keywords" : "Melexsoft, blockchain, crypto...",
+
     "head_contact_title" : "Contact",
     "head_contact_desc" : "MelexSoft is a BlockChain company which founded in 2021.",
     "head_contact_keywords" : "Melexsoft, blockchain, crypto...",
@@ -133,6 +141,9 @@
     "case_studies2_purpose_text": "Case Studies 2 purpose",
     "case_studies2_result_text": "Case Studies 2 result",
 
+    "blog_title": "Blog",
+    "blog_desc": "You can find some helpful content about what we are doing in this page.",
+
     "career_title1": "Job Application",
     "career_title2": "Join Us",
     "career_desc": "Please fill in the blanks so we can know more about you.",
@@ -187,6 +198,30 @@
 
     "not_found_title": ["Oopps","nothing here..."],
     "not_found_desc": "The page you looking for is not found..",
-    "not_found_button": "Go Back Homepage"
+    "not_found_button": "Go Back Homepage",
+
+    "blogs": [
+        {
+            "blog_head_title": "What is NFT?",
+            "blog_head_desc": "Let's learn what is NFT.",
+            "blog_head_keywords": "what is nft, nft",
+            "blog_image": "https://via.placeholder.com/1920x768",
+            "blog_title": "What is Nft?",
+            "blog_url": "what-is-nft",
+            "blog_short_text": "let's learn what is nft.",
+            "blog_text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates provident assumenda at accusantium minima obcaecati, architecto doloremque commodi mollitia! Ut omnis obcaecati officia modi nobis sequi necessitatibus asperiores error repellat, ullam dignissimos consequatur vero nisi voluptatem animi placeat, quaerat expedita beatae consectetur illum nihil voluptas est itaque! Labore mollitia doloremque unde ratione, enim illum, ex provident ad optio, expedita quas tempora eum id suscipit ullam. Quod beatae facere et laboriosam quis, cum quibusdam facilis molestias?"
+        },
+        {
+            "blog_head_title": "What is Blockchain?",
+            "blog_head_desc": "Let's learn what is Blockchain.",
+            "blog_head_keywords": "what is blockchain, blockchain",
+            "blog_image": "https://via.placeholder.com/1920x768",
+            "blog_title": "What is Blockchain?",
+            "blog_url": "what-is-blockchain",
+            "blog_short_text": "let's learn what is blockchain.",
+            "blog_text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates provident assumenda at accusantium minima obcaecati, architecto doloremque commodi mollitia! Ut omnis obcaecati officia modi nobis sequi necessitatibus asperiores error repellat, ullam dignissimos consequatur vero nisi voluptatem animi placeat, quaerat expedita beatae consectetur illum nihil voluptas est itaque! Labore mollitia doloremque unde ratione, enim illum, ex provident ad optio, expedita quas tempora eum id suscipit ullam. Quod beatae facere et laboriosam quis, cum quibusdam facilis molestias?"
+        }
+    
+    ]
 
 }
